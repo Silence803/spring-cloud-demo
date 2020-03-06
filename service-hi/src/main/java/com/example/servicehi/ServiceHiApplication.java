@@ -26,4 +26,19 @@ public class ServiceHiApplication {
         return "hi " + name + ",i am from port:" + port;
     }
 
+    @RequestMapping("/name")
+    public String name(String name){
+        return "My name is " + name + ". aaa";
+    }
+
+    @RequestMapping("/age")
+    public String age(String age){
+        return "I am " + age + " years old this year. aaa";
+    }
+
+    @RequestMapping("/routeAll")
+    public String routeAll(String pass) {
+        return "Can I pass? " + pass + "! port：" + port;
+    }
+
 }
